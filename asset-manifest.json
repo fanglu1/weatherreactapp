@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/fanglu1/weatherreactapp/static/css/main.d227789d.css",
+    "main.js": "/fanglu1/weatherreactapp/static/js/main.42b1c369.js",
+    "static/media/clouds.jpg": "/fanglu1/weatherreactapp/static/media/clouds.3293f66d47cb0e02fda7.jpg",
+    "index.html": "/fanglu1/weatherreactapp/index.html",
+    "main.d227789d.css.map": "/fanglu1/weatherreactapp/static/css/main.d227789d.css.map",
+    "main.42b1c369.js.map": "/fanglu1/weatherreactapp/static/js/main.42b1c369.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d227789d.css",
+    "static/js/main.42b1c369.js"
+  ]
+}
