@@ -1,6 +1,33 @@
 import React from 'react';
 import "./App.css";
 
+const mystyle = {
+  color: "white",
+  fontFamily: "#f9faf8",
+  fontSize: "200%",
+  textAlign: "center",
+  marginLeft: "auto",
+  marginRight: "auto",
+}
+
+const climateStyle = {
+  borderStyle: "solid",
+  borderColor: "white",
+  width: "auto",
+  color: "white",
+  fontFamily: "#f9faf8",
+  fontSize: "150%",
+  textAlign: "center",
+  marginLeft: "auto",
+  marginRight: "auto",
+}
+
+const search = {
+  marginLeft: "auto",
+  marginRight: "auto",
+  textAlign: "center",
+}
+
 const App = () => {
   const weather = {
     apiKey: "3b81ebede925f70faef548f7e16c5982",
@@ -44,15 +71,17 @@ const App = () => {
     day: "numeric",
   });
 
+  const time = new Date().toLocaleTimeString();
+
   return (
     <div>
        <nav className="flex-container">
       <div className="header">
-        <h1 className="header-text">The Weather</h1>
+        <h1 style={mystyle}>The Weather</h1>
       </div>
     </nav>
     <br></br>
-      <div className="search">
+      <div style={search}>
         <input
           type="text"
           class="searchButn"
@@ -61,9 +90,9 @@ const App = () => {
         <button onClick={Weather}>Search</button>
       </div>
       <br></br>
-      <div className="climate">
-        <h2 className="title">Wow It's Nice/Not Nice Out</h2>
-        <div className="date">{date}</div>
+      <div style={climateStyle}>
+        <h2 className="title">Check out today's weather!</h2>
+        <div className="date">{date} {time}</div>
         <h3 className="city">City</h3>
         <div className="temp"></div>
         <div className="feelsLike">Feels Like: </div>
